@@ -1,0 +1,2 @@
+npm create vite@latest == cria projeto;
+npm run dev == hospeda projeto  localmente;
