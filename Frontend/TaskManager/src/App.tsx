@@ -1,11 +1,13 @@
-import {Button} from './components/Button'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Login } from './pages/Login';
 import './App.css'
-import {useState} from 'react';
 
 
-function App() {
-  
-  const [text, setText] = useState("")
+
+/*
+import {Button} from './components/Button'
+
+const [text, setText] = useState("")
   const [isClicked, setIsclicked] = useState(false)
  
   function handleChangeText(e:any){
@@ -26,6 +28,18 @@ function App() {
     <Button text={text} click={handleChangeButton} />
     <input type="text" placeholder="Digitae!" onChange={handleChangeText} />
     </div>   
+  )
+*/
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<h1>Not Found</h1>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
