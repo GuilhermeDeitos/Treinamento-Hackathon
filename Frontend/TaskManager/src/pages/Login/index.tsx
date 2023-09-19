@@ -19,7 +19,7 @@ export function Login() {
       elevation={3}
       style={{
         backgroundColor: "#272727",
-        height: "50%",
+        height: "60%",
         width: "30%",
         display: "flex",
         flexDirection: "column",
