@@ -22,7 +22,7 @@ export function FormLogin() {
     setHasPassword(!hasPassword);
   };
 
-  const handleLogin = (e: unknown) => {
+  const handleLogin = (e: any) => {
     e.preventDefault();
     if (loginData.email === "" || loginData.password === "") {
       Swal.fire({
