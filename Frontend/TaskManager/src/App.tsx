@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login } from './pages/Login';
 import { TaskPage } from './pages/Tasks';
+import {RegisterPage} from './pages/Register'
 import './App.css'
 
 
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<TaskPage/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<RegisterPage/>} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </BrowserRouter>
