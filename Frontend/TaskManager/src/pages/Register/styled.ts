@@ -5,12 +5,19 @@ export const StyledForm = styled.form`
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
     width: 100%;
+    height: 100%;
+    & > h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
     & > .sc-beyTiQ{
         width: 70%;
         margin-bottom: 1rem;
     }
     & > button{
+        margin-top: 0.8rem;
         border: 1px solid black;
         border-radius: .4rem;
         background-color: White;
